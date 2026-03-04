@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보 처리방침</title>
+    <style>
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          padding: 20px;
+          line-height: 1.6;
+          color: #333;
+        }
+        h1 {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        h2 {
+          font-size: 16px;
+          font-weight: bold;
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+        p, ul {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        ul {
+          padding-left: 20px;
+        }
+        .section {
+          margin-bottom: 30px;
+        }
+        .update-date {
+          color: #666;
+          font-size: 12px;
+          margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<h1>개인정보 처리방침</h1>
+
+<div class="section">
+    <p>골스토리(이하 "회사")는 이용자의 개인정보를 중요시하며 「개인정보 보호법」 등 관련 법령을 준수하고 있습니다.</p>
+</div>
+
+<div class="section">
+    <h2>1. 수집하는 개인정보 항목</h2>
+    <ul>
+        <li><strong>14세 이상 여부 (필수)</strong>: 서비스 이용 가능 여부 확인을 위해 수집</li>
+        <li><strong>성별 (필수)</strong>: 날씨 기반 착장 추천 서비스 제공을 위해 수집</li>
+        <li>
+            <strong>출발지 정보 (필수)</strong>: 골프장까지 출발/도착 시간 계산을 위해 수집<br>
+            - 출발지 <strong>주소(문자열)</strong> 및 <strong>좌표(위도, 경도)</strong>를 포함할 수 있습니다.<br>
+            - 출발지 좌표는 이용자가 주소/장소 검색으로 선택한 출발지를 서버에서 좌표로 변환한 값이며, 회사는 <strong>GPS 기반 현재 위치 권한을 사용하지 않습니다</strong>.
+        </li>
+        <li><strong>FCM 토큰 (자동 생성)</strong>: 푸시 알림 발송을 위해 자동 수집</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>2. 개인정보 수집 방법</h2>
+    <ul>
+        <li>앱 사용 중 이용자가 직접 입력/선택 (14세 이상 여부, 성별, 출발지 설정 등)</li>
+        <li>서비스 제공 과정에서 자동 생성 정보 수집 (FCM 토큰 등)</li>
+        <li>서비스 운영 과정에서 서버 운영 로그가 생성·보관될 수 있습니다.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>3. 개인정보의 이용 목적</h2>
+    <ul>
+        <li>날씨 기반 골프 착장 추천 서비스 제공</li>
+        <li>라운드 일정 알림(푸시) 발송</li>
+        <li>골프장까지 출발/도착 시간 계산(경로 및 소요시간 포함)</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>4. 개인정보의 보유 및 이용 기간</h2>
+    <ul>
+        <li>개인정보는 서비스 제공을 위해 보관될 수 있으며, <strong>회원탈퇴 시 지체 없이 파기</strong>합니다.</li>
+        <li>이용자가 삭제를 요청하는 경우 지체 없이 파기합니다.</li>
+        <li>네트워크 상태 등에 따라 삭제 처리가 지연될 수 있으며, 이 경우 앱 재실행 후 회원탈퇴를 다시 시도하거나 아래 문의처로 삭제를 요청할 수 있습니다.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>5. 개인정보의 제3자 제공</h2>
+    <p>회사는 원칙적으로 이용자의 개인정보를 <strong>마케팅 목적 등으로 제3자에게 제공하지 않습니다.</strong></p>
+    <p>다만 서비스 제공을 위해 외부 API를 호출하는 과정에서 일부 정보(주소/좌표 등)가 전송될 수 있습니다(아래 “6. 개인정보 처리 위탁 및 외부 서비스 이용” 참조).</p>
+</div>
+
+<div class="section">
+    <h2>6. 개인정보 처리 위탁 및 외부 서비스 이용</h2>
+
+    <ul>
+        <li><strong>수탁업체</strong>: Google Firebase (Google LLC, 미국)</li>
+        <li><strong>위탁 업무</strong>: 익명 인증(Anonymous Auth), 데이터 저장(Firestore), 서버 기능 실행(Cloud Functions), 푸시 알림 발송(FCM)</li>
+    </ul>
+
+    <p>회사는 서비스 제공을 위해 아래 외부 서비스를 이용할 수 있으며, 이 과정에서 서비스 제공에 필요한 범위 내의 정보가 API 호출 시점에 전송될 수 있습니다.</p>
+    <ul>
+        <li><strong>SK텔레콤㈜ (TMAP API)</strong>: 경로 및 소요 시간 계산을 위해 출발지 좌표/목적지(골프장) 좌표 전송</li>
+        <li><strong>OpenWeather</strong>: 날씨 정보 제공을 위해 목적지(골프장) 좌표 전송</li>
+        <li><strong>네이버 지오코딩 API</strong>: 출발지 주소를 좌표로 변환하기 위해 출발지 주소(문자열) 전송</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>7. 이용자의 권리</h2>
+    <ul>
+        <li>이용자는 개인정보 열람, 수정, 삭제를 요청할 수 있습니다.</li>
+        <li>이용자는 앱 내 설정 화면에서 직접 수정할 수 있습니다(가능한 항목에 한함).</li>
+        <li>이용자는 앱 내 설정 화면의 <strong>회원탈퇴</strong> 기능을 통해 저장된 개인정보 및 서비스 이용 데이터를 삭제할 수 있습니다.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>8. 개인정보 보호책임자</h2>
+    <ul>
+        <li><strong>이메일</strong>: fairwaybeats01@gmail.com</li>
+        <li><strong>문의 시간</strong>: 평일 09:00 ~ 18:00</li>
+    </ul>
+</div>
+
+<p class="update-date">최종 수정일: 2026년 3월 4일</p>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치정보 이용약관</title>
+    <style>
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+          padding: 20px;
+          line-height: 1.6;
+          color: #333;
+        }
+        h1 {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        h2 {
+          font-size: 16px;
+          font-weight: bold;
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+        p, ul {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        ul {
+          padding-left: 20px;
+        }
+        .section {
+          margin-bottom: 30px;
+        }
+        .update-date {
+          color: #666;
+          font-size: 12px;
+          margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<h1>위치정보 이용약관</h1>
+
+<div class="section">
+    <p>골스토리(이하 "회사")는 「위치정보의 보호 및 이용 등에 관한 법률」 등 관련 법령에 따라 아래와 같이 위치정보 이용약관을 명시합니다.</p>
+</div>
+
+<div class="section">
+    <h2>1. 수집(처리)하는 위치정보</h2>
+    <ul>
+        <li>사용자가 주소/장소 검색을 통해 직접 선택한 <strong>출발지 주소(문자열)</strong> 및 이를 변환한 <strong>출발지 위치 좌표(위도, 경도)</strong></li>
+        <li>라운드 일정에 포함된 골프장(목적지)의 <strong>위치 좌표(위도, 경도)</strong></li>
+        <li><strong>회사는 단말기의 현재 위치(GPS)를 자동으로 수집하거나 추적하지 않으며</strong>, 위치 권한(ACCESS_FINE_LOCATION 등)을 요청하지 않습니다.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>2. 위치정보의 이용 목적</h2>
+    <ul>
+        <li>골프장까지의 경로 및 소요 시간 계산</li>
+        <li>출발 시간 및 도착 시간 안내</li>
+        <li>라운드 일정 기반 날씨 정보 제공(날씨 기반 착장 추천 포함)</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>3. 위치정보의 보유 및 이용 기간</h2>
+    <ul>
+        <li>위치정보는 서비스 제공을 위해 보관될 수 있으며, <strong>회원탈퇴 시 지체 없이 파기</strong>합니다.</li>
+        <li>이용자는 앱 내 설정 화면의 <strong>회원탈퇴</strong> 기능을 통해 위치정보 처리 종료 및 삭제를 요청할 수 있습니다.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>4. 위치정보의 제3자 제공 및 외부 서비스 이용</h2>
+    <p>회사는 서비스 제공을 위해 다음과 같이 위치정보(또는 주소/좌표)를 외부 서비스에 전송할 수 있습니다. 전송은 서비스 제공을 위한 <strong>API 호출 시점에만</strong> 이루어집니다.</p>
+    <ul>
+        <li>
+            <strong>제공받는 자</strong>: SK텔레콤㈜ (TMAP API)<br>
+            <strong>제공 목적</strong>: 경로 및 소요 시간 계산<br>
+            <strong>전송 정보</strong>: 출발지 좌표, 목적지(골프장) 좌표<br>
+            <strong>보유 기간</strong>: 즉시 삭제 (API 호출 처리 목적 달성 즉시, 호출 시점에만 전송)
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <strong>제공받는 자</strong>: OpenWeather (날씨 API 제공사)<br>
+            <strong>제공 목적</strong>: 라운드 일정 기반 날씨 정보 제공<br>
+            <strong>전송 정보</strong>: 목적지(골프장) 좌표(위도, 경도)<br>
+            <strong>보유 기간</strong>: 즉시 삭제 (API 호출 처리 목적 달성 즉시, 호출 시점에만 전송)
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <strong>제공받는 자</strong>: 네이버 지오코딩 API<br>
+            <strong>제공 목적</strong>: 이용자가 선택한 출발지 주소를 좌표로 변환<br>
+            <strong>전송 정보</strong>: 출발지 주소(문자열)<br>
+            <strong>보유 기간</strong>: 즉시 삭제 (API 호출 처리 목적 달성 즉시, 호출 시점에만 전송)
+        </li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>5. 위치정보의 파기</h2>
+    <ul>
+        <li>회원탈퇴 시 모든 위치정보(출발지 주소/좌표 및 관련 데이터)는 삭제됩니다.</li>
+        <li>네트워크 상태 등에 따라 삭제 처리가 지연될 수 있으며, 이 경우 앱 재실행 후 회원탈퇴를 다시 시도하거나 아래 문의처로 삭제를 요청할 수 있습니다.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>6. 이용자의 권리</h2>
+    <ul>
+        <li>위치정보 수집 및 이용에 대한 동의 철회 권리</li>
+        <li>위치정보 삭제 및 수정 권리</li>
+        <li>회원탈퇴를 통해 위치정보 처리 종료 및 삭제를 요청할 수 있습니다.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>7. 위치정보 관리책임자</h2>
+    <ul>
+        <li><strong>이메일</strong>: fairwaybeats01@gmail.com</li>
+        <li><strong>문의 시간</strong>: 평일 09:00 ~ 18:00</li>
+    </ul>
+</div>
+
+<p class="update-date">최종 수정일: 2026년 3월 4일</p>
+</body>
+</html>
