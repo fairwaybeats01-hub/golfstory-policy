@@ -5,127 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>개인정보 처리방침</title>
     <style>
-        body {
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-          padding: 20px;
-          line-height: 1.6;
-          color: #333;
-        }
-        h1 {
-          font-size: 20px;
-          font-weight: bold;
-          margin-bottom: 20px;
-        }
-        h2 {
-          font-size: 16px;
-          font-weight: bold;
-          margin-top: 20px;
-          margin-bottom: 10px;
-        }
-        p, ul {
-          font-size: 14px;
-          margin-bottom: 10px;
-        }
-        ul {
-          padding-left: 20px;
-        }
-        .section {
-          margin-bottom: 30px;
-        }
-        .update-date {
-          color: #666;
-          font-size: 12px;
-          margin-top: 30px;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+               padding: 20px; line-height: 1.6; color: #333; }
+        h1 { font-size: 20px; font-weight: bold; margin-bottom: 8px; }
+        h2 { font-size: 16px; font-weight: bold; margin-top: 24px; margin-bottom: 10px; }
+        p, ul { font-size: 14px; margin-bottom: 10px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        .section { margin-bottom: 24px; }
+        .update-date { color: #666; font-size: 12px; margin-top: 30px; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 12px; }
+        th, td { border: 1px solid #ddd; padding: 7px 6px; text-align: left; vertical-align: top; }
+        th { background: #f5f5f5; font-weight: bold; }
+        .note { font-size: 13px; color: #555; }
     </style>
 </head>
 <body>
 <h1>개인정보 처리방침</h1>
+<p class="note">비욘드 제너레이션(이하 "회사")은 골스토리 서비스를 제공하면서 「개인정보 보호법」 등 관련 법령을 준수하며, 이용자의 개인정보를 다음과 같이 처리합니다.</p>
 
 <div class="section">
-    <p>골스토리(이하 "회사")는 이용자의 개인정보를 중요시하며 「개인정보 보호법」 등 관련 법령을 준수하고 있습니다.</p>
+<h2>1. 처리하는 개인정보 항목 및 이용 목적</h2>
+<table>
+<tr><th>구분</th><th>항목</th><th>이용 목적</th></tr>
+<tr><td>필수</td><td>만 14세 이상 여부</td><td>서비스 이용 자격 확인</td></tr>
+<tr><td>필수</td><td>성별</td><td>날씨 기반 골프 착장 추천</td></tr>
+<tr><td>필수</td><td>출발지 주소 및 좌표</td><td>골프장까지 이동시간·경로 계산</td></tr>
+<tr><td>필수</td><td>로그인 계정 식별자<br>(카카오 회원번호 또는 구글 계정 식별자), 서비스 이용자 식별자(UID)</td><td>회원 식별 및 로그인 유지</td></tr>
+<tr><td>선택</td><td>닉네임, 프로필 이미지 주소, 이메일 주소</td><td>화면 표시 및 회원 식별<br>(카카오·구글 로그인 시 이용자가 동의한 범위에서 전달받습니다)</td></tr>
+<tr><td>필수</td><td>라운드 기록<br>(골프장, 날짜, 티타임, 홀별 스코어, 퍼팅 수, 결제금액 등 이용자가 입력한 값)</td><td>스코어 기록·통계·분석 제공</td></tr>
+<tr><td>선택</td><td>AI 채팅 질문 내용 및 대화 기록</td><td>AI 답변 생성 및 지난 대화 열람</td></tr>
+<tr><td>선택</td><td>이용자가 올린 사진</td><td>스코어카드 인식, 사진에 대한 답변 생성</td></tr>
+<tr><td>자동</td><td>푸시 알림 토큰(FCM)</td><td>라운드 일정 알림 발송</td></tr>
+<tr><td>자동</td><td>서버 처리 기록<br>(이용자 식별자, 요청 시각, 질문 내용, 처리 결과, 오류 내용)</td><td>서비스 운영·장애 대응·품질 개선</td></tr>
+</table>
+<ul>
+<li>회사는 <strong>GPS 기반 현재 위치 권한을 사용하지 않습니다.</strong> 출발지 좌표는 이용자가 주소·장소 검색으로 직접 선택한 출발지를 서버에서 좌표로 변환한 값입니다.</li>
+<li>회사는 <strong>기기의 사진첩에 접근하지 않습니다.</strong> 이용자가 시스템 사진 선택기에서 직접 고른 사진만 전달받으며, 사진 접근 권한을 요구하지 않습니다.</li>
+<li>회사는 만 14세 미만 아동을 대상으로 서비스를 제공하지 않으며, 만 14세 미만 이용자의 개인정보를 수집하지 않습니다.</li>
+</ul>
 </div>
 
 <div class="section">
-    <h2>1. 수집하는 개인정보 항목</h2>
-    <ul>
-        <li><strong>14세 이상 여부 (필수)</strong>: 서비스 이용 가능 여부 확인을 위해 수집</li>
-        <li><strong>성별 (필수)</strong>: 날씨 기반 착장 추천 서비스 제공을 위해 수집</li>
-        <li>
-            <strong>출발지 정보 (필수)</strong>: 골프장까지 출발/도착 시간 계산을 위해 수집<br>
-            - 출발지 <strong>주소(문자열)</strong> 및 <strong>좌표(위도, 경도)</strong>를 포함할 수 있습니다.<br>
-            - 출발지 좌표는 이용자가 주소/장소 검색으로 선택한 출발지를 서버에서 좌표로 변환한 값이며, 회사는 <strong>GPS 기반 현재 위치 권한을 사용하지 않습니다</strong>.
-        </li>
-        <li><strong>FCM 토큰 (자동 생성)</strong>: 푸시 알림 발송을 위해 자동 수집</li>
-    </ul>
+<h2>2. 개인정보의 수집 방법</h2>
+<ul>
+<li>이용자가 앱에서 직접 입력하거나 선택 (만 14세 이상 여부, 성별, 출발지, 라운드 기록, AI 채팅 질문, 사진 등)</li>
+<li>카카오·구글 로그인 과정에서 이용자가 동의한 범위의 정보 전달</li>
+<li>서비스 제공 과정에서 자동 생성 (이용자 식별자, 푸시 알림 토큰, 서버 처리 기록)</li>
+</ul>
 </div>
 
 <div class="section">
-    <h2>2. 개인정보 수집 방법</h2>
-    <ul>
-        <li>앱 사용 중 이용자가 직접 입력/선택 (14세 이상 여부, 성별, 출발지 설정 등)</li>
-        <li>서비스 제공 과정에서 자동 생성 정보 수집 (FCM 토큰 등)</li>
-        <li>서비스 운영 과정에서 서버 운영 로그가 생성·보관될 수 있습니다.</li>
-    </ul>
+<h2>3. 개인정보의 보유 및 이용 기간</h2>
+<ul>
+<li>회원가입 정보, 라운드 기록, AI 채팅 대화 기록은 <strong>회원탈퇴 시까지</strong> 보관하며, 탈퇴 시 지체 없이 파기합니다.</li>
+<li>AI 채팅 대화는 앱 안에서 <strong>대화방 단위로 직접 삭제</strong>할 수 있습니다. 다만 서비스 운영·장애 대응 및 품질 개선을 위한 서버 처리 기록에는 질문 내용이 별도로 보관되며, 이 기록은 <strong>회원탈퇴 시 함께 파기</strong>됩니다.</li>
+<li><strong>이용자가 올린 사진은 회사 서버에 저장하지 않습니다.</strong> 인식·답변 생성을 위해 전송된 뒤 처리 과정에서만 사용되며, 사진 사본은 이용자 기기에만 저장되어 대화 화면에 표시되고 대화방을 삭제하면 함께 삭제됩니다.</li>
+<li>서버 처리 기록은 서비스 운영, 장애 대응 및 품질 개선을 위해 <strong>회원탈퇴 시까지</strong> 보관하며, 탈퇴 시 해당 이용자의 기록을 파기합니다.</li>
+<li>법령에 따라 보존이 필요한 경우 해당 기간 동안 보관합니다.</li>
+</ul>
 </div>
 
 <div class="section">
-    <h2>3. 개인정보의 이용 목적</h2>
-    <ul>
-        <li>날씨 기반 골프 착장 추천 서비스 제공</li>
-        <li>라운드 일정 알림(푸시) 발송</li>
-        <li>골프장까지 출발/도착 시간 계산(경로 및 소요시간 포함)</li>
-    </ul>
+<h2>4. 개인정보의 제3자 제공</h2>
+<p>회사는 이용자의 개인정보를 <strong>제3자에게 제공하지 않습니다.</strong> 다만 서비스 제공에 필요한 범위에서 아래 5항의 위탁과 6항의 국외 이전이 이루어집니다.</p>
+<p>법령에 특별한 규정이 있거나 수사기관이 법령에 정한 절차와 방법에 따라 요구하는 경우에는 예외로 합니다.</p>
 </div>
 
 <div class="section">
-    <h2>4. 개인정보의 보유 및 이용 기간</h2>
-    <ul>
-        <li>개인정보는 서비스 제공을 위해 보관될 수 있으며, <strong>회원탈퇴 시 지체 없이 파기</strong>합니다.</li>
-        <li>이용자가 삭제를 요청하는 경우 지체 없이 파기합니다.</li>
-        <li>네트워크 상태 등에 따라 삭제 처리가 지연될 수 있으며, 이 경우 앱 재실행 후 회원탈퇴를 다시 시도하거나 아래 문의처로 삭제를 요청할 수 있습니다.</li>
-    </ul>
+<h2>5. 개인정보 처리의 위탁</h2>
+<table>
+<tr><th>수탁자</th><th>위탁 업무</th></tr>
+<tr><td>Google LLC (Firebase)</td><td>회원 인증, 데이터 저장, 서버 기능 실행, 푸시 알림 발송</td></tr>
+<tr><td>OpenAI OpCo, LLC</td><td>AI 채팅 답변 생성, 스코어카드·사진 인식, 착장 추천 문구 생성</td></tr>
+<tr><td>SK텔레콤㈜ (TMAP)</td><td>골프장까지의 경로 및 소요시간 계산</td></tr>
+<tr><td>OpenWeather Ltd.</td><td>골프장 위치의 날씨 정보 조회</td></tr>
+<tr><td>네이버클라우드㈜</td><td>출발지 주소를 좌표로 변환</td></tr>
+<tr><td>㈜카카오</td><td>카카오 계정을 이용한 로그인 처리</td></tr>
+</table>
+<p class="note">Cloud Firestore(데이터 저장)와 Cloud Functions(서버 기능)는 대한민국(서울) 리전으로 설정되어 있으며, Firebase Authentication 및 FCM 등 일부 서비스는 미국 또는 Google 의 글로벌 인프라에서 처리됩니다. 자세한 내용은 아래 6항을 참고하십시오.</p>
 </div>
 
 <div class="section">
-    <h2>5. 개인정보의 제3자 제공</h2>
-    <p>회사는 원칙적으로 이용자의 개인정보를 <strong>마케팅 목적 등으로 제3자에게 제공하지 않습니다.</strong></p>
-    <p>다만 서비스 제공을 위해 외부 API를 호출하는 과정에서 일부 정보(주소/좌표 등)가 전송될 수 있습니다(아래 “6. 개인정보 처리 위탁 및 외부 서비스 이용” 참조).</p>
+<h2>6. 개인정보의 국외 이전</h2>
+<p>회사는 서비스 제공을 위해 아래와 같이 개인정보를 국외로 이전합니다.</p>
+<table>
+<tr><th>이전받는 자<br>(연락처)</th><th>이전 국가</th><th>이전 항목</th><th>이전 시기 및 방법</th><th>이용 목적</th><th>보유 기간</th></tr>
+<tr>
+  <td>OpenAI OpCo, LLC<br>privacy@openai.com</td>
+  <td><strong>미국</strong><br>(계약 당사자인 OpenAI OpCo, LLC 의 처리 위치)<br><br>그 밖에 OpenAI 가 API 서비스 제공을 위해 이용하는 국외 처리 지역(아일랜드·영국·일본·대한민국 등)<br>※ 아래 &lsquo;처리 지역 목록&rsquo; 참조</td>
+  <td>AI 채팅 질문 내용 및 대화 기록, 이용자가 올린 사진, 착장 추천에 필요한 조건값(성별, 티타임대, 강수·바람 정도)</td>
+  <td>이용자가 AI 채팅·사진 인식을 이용하거나 라운드를 등록해 착장 추천이 생성되는 시점에, 암호화된 통신(HTTPS)으로 API 전송</td>
+  <td>AI 채팅 답변 생성, 스코어카드·사진 인식, 착장 추천 문구 생성</td>
+  <td>회사는 요청·응답이 저장되지 않도록 설정하여 이용하며, 오·남용 방지를 위한 로그에 최대 30일간 보관된 후 삭제됩니다</td>
+</tr>
+<tr>
+  <td>Google LLC<br>(Firebase)<br>googlekrsupport@google.com</td>
+  <td><strong>미국</strong><br>(Firebase Authentication 의 처리 위치)<br><br>푸시 알림(FCM) 등 일부 서비스는 Google 이 운영하는 국외 데이터센터 소재 국가에서 처리될 수 있습니다</td>
+  <td>서비스 이용자 식별자(UID), 로그인 계정 식별자, 이메일 주소, 푸시 알림 토큰</td>
+  <td>회원가입·로그인 및 푸시 알림 발송 시점에, 암호화된 통신(HTTPS)으로 전송</td>
+  <td>회원 인증 및 푸시 알림 발송</td>
+  <td>회원탈퇴 시까지</td>
+</tr>
+
+</table>
+<ul>
+<li><strong>법적 근거</strong>: 「개인정보 보호법」 제28조의8 제1항 제3호에 따라, 이 처리방침에 국외 이전 사항을 공개하고 계약 이행 및 이용자 편의 증진을 위해 필요한 범위에서 이전합니다.</li>
+<li><strong>처리 지역 목록</strong>: OpenAI 는 API 서비스에 이용하는 재처리자와 그 처리 국가를 <a href="https://openai.com/policies/sub-processor-list/">재처리자 목록</a>에, Google 은 데이터센터 소재지를 각각 공개하고 있습니다. 이 목록은 각 사의 사정에 따라 변경될 수 있으며, 회사는 변경 사실을 확인하는 즉시 이 처리방침에 반영합니다.</li>
+<li><strong>이전받는 자의 개인정보 이용 제한</strong>: 전송된 내용은 <strong>AI 모델 학습에 사용되지 않습니다.</strong> 회사는 OpenAI 의 데이터 공유 설정을 모두 사용하지 않음으로 지정하여 운영하고 있습니다.</li>
+<li><strong>웹 검색</strong>: 실시간 정보가 필요한 질문의 경우 답변 생성 과정에서 질문으로부터 만들어진 검색어가 웹 검색에 사용될 수 있습니다. 이때 이용자의 라운드 기록·출발지 등 개인 정보는 검색어에 포함되지 않습니다.</li>
+<li><strong>이전 거부 방법과 그 효과</strong>: 이용자는 AI 채팅과 사진 인식 기능을 이용하지 않음으로써 해당 정보의 이전을 거부할 수 있습니다. 다만 라운드를 등록하면 착장 추천 문구 생성을 위해 위 조건값이 이전되므로, 이를 원하지 않으시는 경우 <strong>회원탈퇴</strong>를 통해 서비스 이용을 중단하실 수 있습니다. 이전을 거부하시더라도 이미 기록된 라운드 데이터의 열람에는 제한이 없습니다.</li>
+<li><strong>Firebase 서비스별 처리 위치</strong>: Cloud Firestore(데이터 저장)와 Cloud Functions(서버 기능)는 <strong>대한민국(서울) 리전</strong>으로 설정되어 있습니다. 다만 <strong>Firebase Authentication(회원 인증)은 미국에서 처리되며, FCM(푸시 알림) 등 일부 Firebase 서비스는 Google 의 글로벌 인프라에서 처리될 수 있습니다.</strong></li>
+</ul>
 </div>
 
 <div class="section">
-    <h2>6. 개인정보 처리 위탁 및 외부 서비스 이용</h2>
-
-    <ul>
-        <li><strong>수탁업체</strong>: Google Firebase (Google LLC, 미국)</li>
-        <li><strong>위탁 업무</strong>: 익명 인증(Anonymous Auth), 데이터 저장(Firestore), 서버 기능 실행(Cloud Functions), 푸시 알림 발송(FCM)</li>
-    </ul>
-
-    <p>회사는 서비스 제공을 위해 아래 외부 서비스를 이용할 수 있으며, 이 과정에서 서비스 제공에 필요한 범위 내의 정보가 API 호출 시점에 전송될 수 있습니다.</p>
-    <ul>
-        <li><strong>SK텔레콤㈜ (TMAP API)</strong>: 경로 및 소요 시간 계산을 위해 출발지 좌표/목적지(골프장) 좌표 전송</li>
-        <li><strong>OpenWeather</strong>: 날씨 정보 제공을 위해 목적지(골프장) 좌표 전송</li>
-        <li><strong>네이버 지오코딩 API</strong>: 출발지 주소를 좌표로 변환하기 위해 출발지 주소(문자열) 전송</li>
-    </ul>
+<h2>7. 개인정보의 파기 절차 및 방법</h2>
+<ul>
+<li><strong>파기 절차</strong>: 회원탈퇴, 삭제 요청, 처리 목적 달성 등으로 개인정보가 불필요하게 된 경우 지체 없이 파기합니다.</li>
+<li><strong>파기 방법</strong>: 전자적 파일 형태로 저장된 개인정보는 복구·재생할 수 없는 방법으로 삭제합니다. 회사는 종이 문서 형태로 개인정보를 보관하지 않습니다.</li>
+<li>법령에 따라 보존해야 하는 정보가 있는 경우, 해당 정보를 다른 개인정보와 분리하여 보관한 뒤 보존 기간이 지나면 파기합니다.</li>
+<li>네트워크 상태 등으로 삭제 처리가 지연될 수 있으며, 이 경우 앱을 다시 실행해 회원탈퇴를 재시도하거나 아래 연락처로 삭제를 요청하실 수 있습니다.</li>
+</ul>
 </div>
 
 <div class="section">
-    <h2>7. 이용자의 권리</h2>
-    <ul>
-        <li>이용자는 개인정보 열람, 수정, 삭제를 요청할 수 있습니다.</li>
-        <li>이용자는 앱 내 설정 화면에서 직접 수정할 수 있습니다(가능한 항목에 한함).</li>
-        <li>이용자는 앱 내 설정 화면의 <strong>회원탈퇴</strong> 기능을 통해 저장된 개인정보 및 서비스 이용 데이터를 삭제할 수 있습니다.</li>
-    </ul>
+<h2>8. 개인정보의 안전성 확보 조치</h2>
+<ul>
+<li><strong>접근 권한 관리</strong>: 개인정보에 접근할 수 있는 인원을 개인정보 보호책임자 1인으로 제한하고 있으며, 인원이 늘어나는 경우 접근 권한을 부여·변경·말소하여 관리합니다.</li>
+<li><strong>전송 구간 암호화</strong>: 개인정보를 주고받는 모든 통신에 암호화된 통신방식(HTTPS/TLS)을 사용합니다.</li>
+<li><strong>인증 정보 보호</strong>: 외부 서비스 접근에 필요한 인증키는 별도의 비밀 관리 체계(Secret Manager)에 보관하며 앱에 포함하지 않습니다.</li>
+<li><strong>접근 통제</strong>: 데이터베이스 접근 규칙을 두어 이용자가 자신의 데이터에만 접근할 수 있도록 제한합니다.</li>
+<li><strong>기록 보호</strong>: 서버 처리 기록에는 사진과 인증 정보를 남기지 않습니다.</li>
+</ul>
 </div>
 
 <div class="section">
-    <h2>8. 개인정보 보호책임자</h2>
-    <ul>
-        <li><strong>이메일</strong>: fairwaybeats01@gmail.com</li>
-        <li><strong>문의 시간</strong>: 평일 09:00 ~ 18:00</li>
-    </ul>
+<h2>9. 정보주체의 권리와 행사 방법</h2>
+<ul>
+<li>이용자는 언제든지 자신의 개인정보에 대해 <strong>열람, 정정, 삭제, 처리정지</strong>를 요구할 수 있으며, <strong>동의를 철회</strong>할 수 있습니다.</li>
+<li>앱 안 설정 화면에서 직접 정정할 수 있으며(가능한 항목에 한함), <strong>회원탈퇴</strong> 기능으로 저장된 개인정보와 이용 데이터를 삭제할 수 있습니다.</li>
+<li>AI 채팅 대화는 대화 목록에서 대화방 단위로 직접 삭제할 수 있습니다.</li>
+<li>그 밖의 요구는 아래 연락처로 접수하며, 회사는 지체 없이 조치합니다.</li>
+<li>이용자는 개인정보 침해로 인한 구제를 받기 위하여 개인정보분쟁조정위원회(1833-6972), 개인정보침해신고센터(118), 대검찰청(1301), 경찰청(182)에 분쟁 해결이나 상담을 신청할 수 있습니다.</li>
+</ul>
 </div>
 
-<p class="update-date">최종 수정일: 2026년 3월 4일</p>
+<div class="section">
+<h2>10. 만 14세 미만 아동의 개인정보</h2>
+<p>회사는 만 14세 미만 아동을 대상으로 서비스를 제공하지 않으며, 만 14세 미만 아동의 개인정보를 수집하지 않습니다. 가입 과정에서 만 14세 이상 여부를 확인하고 있습니다.</p>
+</div>
+
+<div class="section">
+<h2>11. 개인정보 보호책임자</h2>
+<ul>
+<li><strong>상호</strong>: 비욘드 제너레이션</li>
+<li><strong>개인정보 보호책임자</strong>: 강태혁 (대표)</li>
+<li><strong>연락처</strong>: fairwaybeats01@gmail.com</li>
+<li><strong>문의 시간</strong>: 평일 09:00 ~ 18:00</li>
+</ul>
+<p class="note">개인정보 보호와 관련한 문의, 불만 처리, 피해 구제는 위 연락처로 접수하며, 회사는 지체 없이 답변하고 처리합니다.</p>
+</div>
+
+<div class="section">
+<h2>12. 개인정보 처리방침의 변경</h2>
+<ul>
+<li>이 처리방침은 <strong>2026년 8월 31일</strong>부터 적용됩니다.</li>
+<li>법령·정책 또는 서비스 내용의 변경에 따라 내용이 추가·삭제·수정되는 경우, <strong>변경 내용과 시행일을 이 처리방침에 표시</strong>하여 시행 7일 전부터 알립니다. 다만 이용자의 권리에 중대한 변경이 있는 경우에는 30일 전부터 알립니다.</li>
+<li>이 처리방침은 앱 안 <strong>설정 → 개인정보 처리방침</strong> 화면에서 언제든지 확인하실 수 있습니다.</li>
+<li>이전 버전의 처리방침이 필요하신 경우 위 연락처로 요청하시면 제공해 드립니다.</li>
+</ul>
+<p class="update-date">시행일: 2026년 8월 31일<br>최종 수정일: 2026년 8월 31일</p>
+</div>
+
 </body>
 </html>
